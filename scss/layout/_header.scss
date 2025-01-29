@@ -1,0 +1,53 @@
+@use '../base/colors' as *;
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+/*Styles Header*/
+
+.header{
+    width: 100%;
+    height: 35px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__info{
+        width: 80%;
+        max-width: $max-width;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $third-color;
+    }
+    &__contact{
+        display: flex;
+        gap: 100px;
+    }
+    &__contact-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__icon{
+        width: 20px;
+        height: 20px;
+        &--clock{
+            display: inline-block;
+            background-image: url('../../assets/icons/watch_icon.png');
+        }
+        &--phone{
+            display: inline-block;
+            background-image: url('../../assets/icons/phone_icon.png');
+        }
+    }
+    &__text{
+        font-weight: $font-weight-light;
+    }
+    &__register{
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+    }
+   
+}
