@@ -1,0 +1,6 @@
+@use '../base/variables' as *;
+
+.primary-container{
+    max-width: var(--max-width);
+    width: var(--primary-container-width);
+}

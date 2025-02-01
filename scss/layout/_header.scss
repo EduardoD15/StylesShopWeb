@@ -6,19 +6,17 @@
 .header{
     width: 100%;
     height: 35px;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     
-    &__info{
-        width: 80%;
-        max-width: $max-width;
+    &__info{     
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: $third-color;
+        color: var(--third-color);
     }
     &__contact{
         display: flex;
@@ -43,11 +41,11 @@
         }
     }
     &__text{
-        font-weight: $font-weight-light;
+        font-weight: var(--font-weight-light);
     }
     &__register{
         text-transform: uppercase;
-        font-weight: $font-weight-light;
+        font-weight: var(--font-weight-light);
     }
    
 }

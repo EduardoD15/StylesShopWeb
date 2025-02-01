@@ -1,0 +1,12 @@
+@mixin button-style($width, $height, $color, $font-weight, $font-size, $bg-color, $border-radius) {
+    width: $width;
+    height: $height;
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,69 +1,226 @@
 /*typography fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-/*typography size*/
-/*typography weigh*/
+/*css variables*/
+:root {
+  --max-width: 1600px;
+  --primary-container-width: 80%;
+  --second-container-width: 100%;
+}
+
+.primary-container {
+  max-width: var(--max-width);
+  width: var(--primary-container-width);
+}
+
+/*CSS FONTS*/
+:root {
+  --primary-font: "Roboto", serif;
+  /* Typography Size */
+  --title-h1: 50px;
+  --title-h2: 35px;
+  --title-h3: 25px;
+  --title-h4: 20px;
+  --title-h5: 18px;
+  --title-h6: 16px;
+  --paragraph-p: 12px;
+  --paragraph-p2: 14px;
+  /* Typography Weight */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extraBold: 800;
+  --font-weight-black: 900;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
+  font-family: var(--primary-font);
 }
 
 h1 {
-  font-size: 50px;
+  font-size: var(--title-h1);
 }
 
 h2 {
-  font-size: 35px;
+  font-size: var(--title-h2);
 }
 
 h3 {
-  font-size: 25px;
+  font-size: var(--title-h3);
 }
 
 h4 {
-  font-size: 20px;
+  font-size: var(--title-h4);
 }
 
 h5 {
-  font-size: 18px;
+  font-size: var(--title-h5);
 }
 
 h6 {
-  font-size: 16px;
+  font-size: var(--title-h6);
 }
 
 p {
-  font-size: 12px;
+  font-size: var(--paragraph-p);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+  cursor: pointer;
 }
 
 ul, ol {
   list-style: none;
 }
 
-/*Colors*/
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*Colors Css*/
+:root {
+  --primary-color: #CC3333;
+  --second-color: #2A435D;
+  --third-color: #FFF8EE;
+  --link-color: #4BFF3C;
+  --white-color: #FFFFFF;
+}
+
+body {
+  background-color: var(--third-color);
+}
+
+/*Hero*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.hero__carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hero__extras {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.hero__icon {
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.hero__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.hero__carousel .hero__dot--active {
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
+/*Popular dishes*/
+.popular-dishes {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-dishes__content {
+  text-align: center;
+}
+.popular-dishes__subtitle {
+  color: var(--second-color);
+  font-weight: var(--font-weight-bold);
+}
+.popular-dishes__title {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+.popular-dishes__gallery {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.popular-dishes__image {
+  max-width: 230px;
+  max-height: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.popular-dishes__image img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.popular-dishes__link:hover {
+  transform: scale(1.1);
+}
+
 /*Styles Header*/
 .header {
   width: 100%;
   height: 35px;
-  background-color: #CC3333;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header__info {
-  width: 80%;
-  max-width: 1600px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #FFF8EE;
+  color: var(--third-color);
 }
 .header__contact {
   display: flex;
@@ -88,15 +245,16 @@ ul, ol {
   background-image: url("../../assets/icons/phone_icon.png");
 }
 .header__text {
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
 }
 .header__register {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
 }
 
+/*Styles nav*/
 .nav {
-  background-color: #FFF8EE;
+  background-color: var(--third-color);
   height: 119px;
   width: 100%;
   display: flex;
@@ -105,8 +263,6 @@ ul, ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .nav__container {
-  width: 80%;
-  max-width: 1600px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -123,25 +279,25 @@ ul, ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .nav__menu-item {
-  color: #2A435D;
-  font-size: 20px;
-  font-weight: 700;
+  color: var(--second-color);
+  font-size: var(--title-h4);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
 .nav__menu-item--cart {
   border-radius: 50%;
-  background-color: #2A435D;
+  background-color: var(--second-color);
   height: 60px;
   width: 60px;
-  color: #FFF8EE;
+  color: var(--third-color);
   position: relative;
 }
 .nav__cart-count {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: var(--title-h4);
+  font-weight: var(--font-weight-ExtraBold);
   position: absolute;
   top: 0;
   left: 50%;
@@ -170,16 +326,16 @@ ul, ol {
   background-image: url("../../assets/icons/delivery.png");
 }
 .nav__delivery-phone {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--paragraph-p2);
 }
 .nav__menu-item--login {
   width: 90px;
   height: 35px;
-  color: #FFF8EE;
-  font-weight: 700;
-  font-size: 18px;
-  background-color: #CC3333;
+  color: var(--third-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--title-h5);
+  background-color: var(--primary-color);
   border-radius: 10px;
   display: flex;
   align-items: center;

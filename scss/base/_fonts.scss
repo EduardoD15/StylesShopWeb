@@ -1,22 +1,25 @@
 /*typography fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-$primary-font: "Roboto", serif;
-
-/*typography size*/
-$title-h1: 50px;
-$title-h2: 35px;
-$title-h3: 25px;
-$title-h4: 20px;
-$title-h5: 18px;
-$title-h6: 16px;
-$paragraph-p: 12px;
-$paragraph-p2: 14px;
-
-/*typography weigh*/
-$font-weight-thin: 100;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-weight-ExtraBold: 800;
-$font-weight-black: 900;
+/*CSS FONTS*/
+:root {
+    --primary-font: "Roboto", serif;
+  
+    /* Typography Size */
+    --title-h1: 50px;
+    --title-h2: 35px;
+    --title-h3: 25px;
+    --title-h4: 20px;
+    --title-h5: 18px;
+    --title-h6: 16px;
+    --paragraph-p: 12px;
+    --paragraph-p2: 14px;
+  
+    /* Typography Weight */
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extraBold: 800;
+    --font-weight-black: 900;
+  }
