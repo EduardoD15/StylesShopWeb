@@ -14,8 +14,10 @@
   --third-color: #FFF8EE;
   --link-color: #4BFF3C;
   --white-color: #FFFFFF;
+  --box-shadow-one-color: rgba(0, 0, 0, 0.25);
 }
 
+/*black*/
 /*CSS FONTS*/
 :root {
   --primary-font: "Roboto", serif;
@@ -38,6 +40,11 @@
   --font-weight-black: 900;
 }
 
+/*
+.button-primary {
+    @include button-style(300px, 60px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 20px);
+}
+    */
 * {
   padding: 0;
   margin: 0;

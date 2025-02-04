@@ -93,8 +93,15 @@ button {
   --third-color: #FFF8EE;
   --link-color: #4BFF3C;
   --white-color: #FFFFFF;
+  --box-shadow-one-color: rgba(0, 0, 0, 0.25);
 }
 
+/*black*/
+/*
+.button-primary {
+    @include button-style(300px, 60px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 20px);
+}
+    */
 body {
   background-color: var(--third-color);
 }
@@ -195,7 +202,7 @@ body {
   max-width: 230px;
   max-height: 120px;
   border-radius: 5px;
-  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 8px var(--box-shadow-one-color);
 }
 .popular-dishes__image img {
   border-radius: 5px;
@@ -204,6 +211,131 @@ body {
 }
 .popular-dishes__link:hover {
   transform: scale(1.1);
+}
+
+/*RICH & HEALTHY*/
+.rich-health {
+  margin-top: 50px;
+}
+.rich-health__container {
+  margin: 0 auto;
+}
+.rich-health__header {
+  text-align: center;
+}
+.rich-health__title {
+  font-size: var(--title-h4);
+  font-weight: var(--font-weight-bold);
+  color: var(--second-color);
+}
+.rich-health__content {
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 0.7fr;
+  grid-template-rows: 100px 110px 1fr 1fr;
+  grid-column-gap: 30px;
+  max-height: 600px;
+  margin-top: 15px;
+}
+.rich-health__heading {
+  grid-area: 1/2/2/3;
+  font-size: var(--title-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+.rich-health__description {
+  grid-area: 2/2/3/4;
+  font-size: var(--title-h3);
+  font-weight: var(--font-weight-normal);
+  color: var(--second-color);
+  width: 700px;
+  max-width: 80%;
+}
+.rich-health__list {
+  grid-area: 3/2/4/3;
+}
+.rich-health__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin-top: 22px;
+}
+.rich-health__icon {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-color);
+}
+.rich-health__item-description {
+  color: var(--second-color);
+  font-size: var(--title-h3);
+  font-weight: var(--font-weight-normal);
+}
+.rich-health__btn {
+  grid-area: 4/2/5/3;
+  width: 300px;
+  height: 60px;
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--title-h2);
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+.rich-health__image {
+  grid-area: 3/3/5/4;
+}
+.rich-health__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rich-health__aside {
+  grid-area: 1/1/5/2;
+}
+.rich-health__aside img {
+  width: 100%;
+  max-width: 361px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*Bigg offer*/
+.big-offer {
+  margin-top: 50px;
+}
+.big-offer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 15px;
+}
+.big-offer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.big-offer__title {
+  font-size: var(--title-h1);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-extraBold);
+  font-style: italic;
+}
+.big-offer__description {
+  font-size: var(--title-h4);
+  color: var(--second-color);
+  font-weight: var(--font-weight-bold);
 }
 
 /*Styles Header*/
@@ -246,6 +378,7 @@ body {
 }
 .header__text {
   font-weight: var(--font-weight-light);
+  color: var(--white-color);
 }
 .header__register {
   text-transform: uppercase;
@@ -260,7 +393,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--box-shadow-one-color);
 }
 .nav__container {
   height: 100%;

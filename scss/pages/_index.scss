@@ -103,7 +103,7 @@ justify-content: center;
   max-width: 230px;
   max-height: 120px;
   border-radius: 5px;
-  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 8px var(--box-shadow-one-color);
 
 }
 &__image img{
@@ -116,4 +116,126 @@ justify-content: center;
 }
 
 }
+
+/*RICH & HEALTHY*/
+.rich-health{
+  margin-top: 50px;
+  &__container{
+    margin: 0 auto;
+    
+  }
+  &__header{
+    text-align: center;
+  }
+  &__title{
+    font-size: var(--title-h4);
+    font-weight: var(--font-weight-bold);
+    color: var(--second-color);
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 0.7fr;
+    grid-template-rows: 100px 110px 1fr 1fr;
+    grid-column-gap: 30px;
+    max-height: 600px;
+    margin-top: 15px;
+  }
+  &__heading { 
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: var(--title-h2);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    text-wrap: balance;  
+  }
+  &__description { 
+    grid-area: 2 / 2 / 3 / 4; 
+    font-size: var(--title-h3);
+    font-weight: var(--font-weight-normal);
+    color: var(--second-color);
+     
+    width: 700px;
+    max-width: 80%;
+  }
+
+  
+  
+  &__list { grid-area: 3 / 2 / 4 / 3; 
+  &-item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    margin-top: 22px;
+  }
+  }
+  &__icon{
+    color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    fill:var(--primary-color);
+  }
+  &__item-description{
+    color: var(--second-color);
+    font-size: var(--title-h3);
+    font-weight: var(--font-weight-normal);
+  }
+  
+  &__btn { grid-area: 4 / 2 / 5 / 3; 
+    @include button-style(300px, 60px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 20px);
+    align-self: center;
+    justify-self: center;
+  }
+ 
+  &__image { grid-area: 3 / 3 / 5 / 4; 
+   img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   }
+  }
+  &__aside { grid-area: 1 / 1 / 5 / 2; 
+  img{
+    width: 100%;
+    max-width: 361px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  }
+}
+
+/*Bigg offer*/
+
+.big-offer{
+  margin-top: 50px;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 15px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  &__title{
+    font-size: var(--title-h1);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-extraBold);
+    font-style: italic;
+  }
+  &__description{
+    font-size: var(--title-h4);
+    color: var(--second-color);
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+
 

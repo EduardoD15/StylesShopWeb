@@ -33,8 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /*
   setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
-  }, 5000);
+  }, 5000);*/
 });
