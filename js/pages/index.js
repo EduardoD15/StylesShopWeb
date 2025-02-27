@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const carouselContainer = document.querySelector('.hero__carousel-container');
   const slides = document.querySelectorAll('hero-component');
-  const dots = document.querySelectorAll('.hero__dot');
+  const dots = document.querySelectorAll('.hero__dot--hero');
 
   let currentIndex = 0;
 
