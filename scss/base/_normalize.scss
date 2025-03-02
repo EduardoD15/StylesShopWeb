@@ -4,38 +4,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--primary-font);
+    font-family: $primary-font;
 }
 
 
-
-
 h1 {
-    font-size: var(--title-h1);
+    font-size: $title-h1;
   }
   
   h2 {
-    font-size: var(--title-h2);
+    font-size: $title-h2;
   }
   
   h3 {
-    font-size: var(--title-h3);  
+    font-size: $title-h3;  
   }
   
   h4 {
-    font-size: var(--title-h4);
+    font-size: $title-h4;
   }
   
   h5 {
-    font-size: var(--title-h5);
+    font-size: $title-h5;
   }
   
   h6 {
-    font-size: var(--title-h6);
+    font-size: $title-h6;
   }
   
   p {
-    font-size: var(--paragraph-p);
+    font-size: $paragraph-p;
   }
 
   a {

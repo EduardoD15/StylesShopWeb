@@ -24,23 +24,23 @@
 
 
 .hero__subtitle{
-    color:var(--primary-color);
-    font-size: var(--title-h4);
-    font-weight: var(--font-weight-medium);
+    color:$primary-color;
+    font-size: $title-h4;
+    font-weight: $font-weight-medium;
 }
 
 .hero__title{
     margin-top: 8px;
-    color:var(--second-color);
-    font-size: var(--title-h1);
-    font-weight: var(--font-weight-medium);
+    color:$second-color;
+    font-size: $title-h1;
+    font-weight: $font-weight-medium;
     text-wrap: balance;  
     margin-left: 10px;
     font-style: italic;
 }
 
 .hero__highlight{
-    color:var(--primary-color);
+    color:$primary-color;
 }
 
 .hero__image{
@@ -62,13 +62,13 @@
 }
 
 .hero__button{
-    @include button-style(200px, 60px, var(--third-color), var(--font-weight-bold), var(--title-h2), var(--primary-color), 10px);
+    @include button-style(200px, 60px, $third-color, $font-weight-bold, $title-h2, $primary-color, 10px);
 }
 
 .hero__price{
-    font-weight: var(--font-weight-normal);
-    font-size: var(--title-h3);
-    color: var(--second-color);
+    font-weight: $font-weight-normal;
+    font-size: $title-h3;
+    color: $second-color;
 }
 
 

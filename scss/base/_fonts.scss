@@ -23,3 +23,22 @@
     --font-weight-extraBold: 800;
     --font-weight-black: 900;
   }
+
+$primary-font: var(--primary-font);
+
+$title-h1: var(--title-h1);
+$title-h2: var(--title-h2);
+$title-h3: var(--title-h3);
+$title-h4: var(--title-h4);
+$title-h5: var(--title-h5);
+$title-h6: var(--title-h6);
+$paragraph-p: var(--paragraph-p);
+$paragraph-p2: var(--paragraph-p2);
+
+$font-weight-thin: var(--font-weight-thin);
+$font-weight-light: var(--font-weight-light);
+$font-weight-normal: var(--font-weight-normal);
+$font-weight-medium: var(--font-weight-medium);
+$font-weight-bold: var(--font-weight-bold);
+$font-weight-extraBold: var(--font-weight-extraBold);
+$font-weight-black: var(--font-weight-black);

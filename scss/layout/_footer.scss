@@ -1,14 +1,19 @@
+@use '../base/colors' as *;
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+
+
 .footer{
     margin-top: 40px;
 
     &__title{
-        color: var(--second-color);
-        font-weight: var(--font-weight-bold);
+        color: $second-color;
+        font-weight: $font-weight-bold;
         text-align: center;
         padding-bottom: 15px;
     }
     &__branches-color{
-        background-color: var(--primary-color);
+        background-color: $primary-color;
     }
     &__branches{      
         min-height: 179px;
@@ -27,13 +32,13 @@
         
         height: auto;
         &-title{
-            color: var(--third-color);
-            font-weight: var(--font-weight-bold);
+            color: $third-color;
+            font-weight: $font-weight-bold;
             margin-bottom: 5px;
         }
         &-address{
-            color: var(--third-color);
-            font-weight: var(--font-weight-medium);
+            color: $third-color;
+            font-weight: $font-weight-medium;
             margin-bottom: 10px;
         }
         &-info{
@@ -54,15 +59,15 @@
             height: 20px;
         }
         &-text{
-            color: var(--third-color);
-            font-size: var(--paragraph-p);
-            font-weight: var(--font-weight-normal);
+            color: $third-color;
+            font-size: $paragraph-p;
+            font-weight: $font-weight-normal;
         }
         &-map{
             margin-top: 10px;
-            color: var(--link-color);
-            font-weight: var(--font-weight-normal);
-            font-size: var(--title-h5);
+            color: $link-color;
+            font-weight: $font-weight-normal;
+            font-size: $title-h5;
             text-align: center;
         }
     }
@@ -70,10 +75,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--second-color);
+        background-color: $second-color;
         min-height: 80px;
         text-align: center;
-        color: var(--third-color);
+        color: $third-color;
     }
    
 }

@@ -1,3 +1,7 @@
+@use "../../base/colors" as *;
+@use "../../base/variables" as *;
+@use "../../base/fonts" as *;
+
 .about{
     display: flex;
     align-items: center;
@@ -18,17 +22,17 @@
     }
     &__title{
         text-align: center;
-        color: var(--third-color);
+        color: $third-color;
     }
     &__description{
         text-align: center;
-        color: var(--third-color);
-        font-size: var(--title-h5);
+        color: $third-color;
+        font-size: $title-h5;
     }
 
     &__card{
         border-radius: 20px;
-        border: 2px solid var(--primary-color);
+        border: 2px solid $primary-color;
         display: flex;
 
     }

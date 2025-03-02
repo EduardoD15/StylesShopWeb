@@ -3,7 +3,7 @@
 @use "../base/fonts" as *;
 @use "../mixins" as *;
 body {
-  background-color: var(--third-color);
+  background-color: $third-color;
 }
 
 
@@ -50,7 +50,7 @@ body {
   background-position: center;
   background-size: cover;
   display: inline-block;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 
@@ -66,11 +66,11 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: var(--white-color);
-  box-shadow: inset 0 0 0 2px var(--primary-color);
+  background-color: $white-color;
+  box-shadow: inset 0 0 0 2px $primary-color;
 }
 .hero__carousel .hero__dot--active {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   box-shadow: none;
 }
 
@@ -85,12 +85,12 @@ justify-content: center;
   text-align: center;
  }
 &__subtitle{
-  color: var(--second-color);
-  font-weight: var(--font-weight-bold);
+  color: $second-color;
+  font-weight: $font-weight-bold;
 }
 &__title{
-  color: var(--primary-color);
-  font-weight: var(--font-weight-bold);
+  color: $primary-color;
+  font-weight: $font-weight-bold;
 }
 &__gallery{
   margin-top: 25px;
@@ -104,7 +104,7 @@ justify-content: center;
   max-width: 230px;
   max-height: 120px;
   border-radius: 5px;
-  box-shadow: 0px 0px 8px 8px var(--box-shadow-one-color);
+  box-shadow: 0px 0px 8px 8px $box-shadow-one-color;
 
 }
 &__image img{
@@ -129,9 +129,9 @@ justify-content: center;
     text-align: center;
   }
   &__title{
-    font-size: var(--title-h4);
-    font-weight: var(--font-weight-bold);
-    color: var(--second-color);
+    font-size: $title-h4;
+    font-weight: $font-weight-bold;
+    color: $second-color;
   }
   &__content{
     display: grid;
@@ -143,16 +143,16 @@ justify-content: center;
   }
   &__heading { 
     grid-area: 1 / 2 / 2 / 3;
-    font-size: var(--title-h2);
-    font-weight: var(--font-weight-bold);
-    color: var(--primary-color);
+    font-size: $title-h2;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
     text-wrap: balance;  
   }
   &__description { 
     grid-area: 2 / 2 / 3 / 4; 
-    font-size: var(--title-h3);
-    font-weight: var(--font-weight-normal);
-    color: var(--second-color);
+    font-size: $title-h3;
+    font-weight: $font-weight-normal;
+    color: $second-color;
      
     width: 700px;
     max-width: 80%;
@@ -170,19 +170,19 @@ justify-content: center;
   }
   }
   &__icon{
-    color: var(--primary-color);
+    color: $primary-color;
     width: 20px;
     height: 20px;
-    fill:var(--primary-color);
+    fill:$primary-color;
   }
   &__item-description{
-    color: var(--second-color);
-    font-size: var(--title-h3);
-    font-weight: var(--font-weight-normal);
+    color: $second-color;
+    font-size: $title-h3;
+    font-weight: $font-weight-normal;
   }
   
   &__btn { grid-area: 4 / 2 / 5 / 3; 
-    @include button-style(300px, 60px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 20px);
+    @include button-style(300px, 60px,$white-color , $font-weight-bold, $title-h2, $primary-color, 20px);
     align-self: center;
     justify-self: center;
   }
@@ -226,15 +226,15 @@ justify-content: center;
     height: 100%;
   }
   &__title{
-    font-size: var(--title-h1);
-    color: var(--primary-color);
-    font-weight: var(--font-weight-extraBold);
+    font-size: $title-h1;
+    color: $primary-color;
+    font-weight: $font-weight-extraBold;
     font-style: italic;
   }
   &__description{
-    font-size: var(--title-h4);
-    color: var(--second-color);
-    font-weight: var(--font-weight-bold);
+    font-size: $title-h4;
+    color: $second-color;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -252,21 +252,21 @@ justify-content: center;
     text-align: center;
   }
   &__subtitle{
-    color: var(--primary-color);
-    font-size: var(--title-h4);
+    color: $primary-color;
+    font-size: $title-h4;
     font-weight: bold;
     margin-bottom: 10px;
   }
   &__title{
-    color: var(--second-color);
-    font-size: var(--title-h2);
-    font-weight: var(--font-weight-bold);
+    color: $second-color;
+    font-size: $title-h2;
+    font-weight: $font-weight-bold;
     margin-bottom: 10px;
   }
   &__description{
-    color: var(--second-color);
-    font-size: var(--paragraph-p2);
-    font-weight: var(--font-weight-normal);
+    color: $second-color;
+    font-size: $paragraph-p2;
+    font-weight: $font-weight-normal;
     margin-bottom: 10px;
 
   }
@@ -290,11 +290,11 @@ justify-content: center;
     border-left: 1px solid black;
   }
   &__category-title{
-    font-weight: var(--font-weight-normal);
-    color: var(--primary-color);
+    font-weight: $font-weight-normal;
+    color: $primary-color;
   }
   &__category-title--active{
-    @include button-style(100%, 60px,var(--white-color) , var(--font-weight-normal), var(--title-h3), var(--primary-color), 0px);
+    @include button-style(100%, 60px,$white-color , $font-weight-normal, $title-h3, $primary-color, 0px);
   }
   &__items{
     margin-top: 22px;
@@ -320,15 +320,15 @@ justify-content: center;
   margin-top: 15px;
   }
   &__item-title{
-    color: var(--primary-color);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--title-h3);
+    color: $primary-color;
+    font-weight: $font-weight-normal;
+    font-size: $title-h3;
     
   }
   &__item-description{
-    color: var(--second-color);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--title-h5);
+    color: $second-color;
+    font-weight: $font-weight-normal;
+    font-size: $title-h5;
     margin-top: 5px;
   }
   &__item-footer{
@@ -342,13 +342,13 @@ justify-content: center;
     height: 2px;
     display: inline-block;
     width: 100%;
-    border-bottom: 2px dashed var(--primary-color);
+    border-bottom: 2px dashed $primary-color;
     top: 0;
   }
   &__item-price{
-    color: var(--primary-color);
-    font-size: var(--title-h4);
-   font-weight: var(--font-weight-bold);
+    color: $primary-color;
+    font-size: $title-h4;
+   font-weight: $font-weight-bold;
   }
 
   
@@ -373,8 +373,8 @@ justify-content: center;
       align-items: center;
       justify-content: space-between;
       padding: 0 25px;    
-      background-color: var(--primary-color);
-      color: var(--third-color);
+      background-color: $primary-color;
+      color: $third-color;
       
     }
     &-text{
@@ -384,7 +384,7 @@ justify-content: center;
     &-icon{
       width: 40px;
       height: 40px;
-      color: var(--third-color);
+      color: $third-color;
     
     }
   }
@@ -394,7 +394,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary-color);
+    color: $primary-color;
       
     & svg{
       cursor: pointer;
@@ -418,7 +418,7 @@ justify-content: center;
 
   &__title{
     text-align: center;
-    color: var(--primary-color);
+    color: $primary-color;
     text-transform: uppercase;
     margin-bottom: 33px;
   }
@@ -441,15 +441,15 @@ justify-content: center;
     border-radius: 20px;
     cursor: pointer;
   
-    color: var(--primary-color);
-    box-shadow: 0px 0px 8px 1px var(--box-shadow-one-color);
+    color: $primary-color;
+    box-shadow: 0px 0px 8px 1px $box-shadow-one-color;
 
 
     
     &-description{
       color: unset;
-      font-size: var(--title-h3);
-      font-weight: var(--font-weight-normal);
+      font-size: $title-h3;
+      font-weight: $font-weight-normal;
       text-align: center;
     }
     &-img{
@@ -459,15 +459,15 @@ justify-content: center;
     }
   }
   &__item:hover{
-    background-color: var(--primary-color);
-    color: var(--third-color);
+    background-color: $primary-color;
+    color: $third-color;
   }
  
 
 }
 
 
-
+/*Our Restaurant*/
  .restaurant{
   display: flex;
   align-items: center;
@@ -482,21 +482,21 @@ justify-content: center;
   }
  &__subtitle{
   grid-area: 1 / 3 / 2 / 4;
-  color: var(--primary-color);
-  font-size: var(--title-h4);
-  font-weight: var(--font-weight-bold);
+  color: $primary-color;
+  font-size: $title-h4;
+  font-weight: $font-weight-bold;
   align-self: end;
  }
  &__title{
-  color: var(--second-color);
-  font-size: var(--title-h2);
-  font-weight: var(--font-weight-bold);
+  color: $second-color;
+  font-size: $title-h2;
+  font-weight: $font-weight-bold;
   max-width: 509px;
  }
 &__description{
-  color: var(--second-color);
-  font-size: var(--title-h5);
-  font-weight: var(--font-weight-normal);
+  color: $second-color;
+  font-size: $title-h5;
+  font-weight: $font-weight-normal;
   max-width: 710px;
 }
 
@@ -505,14 +505,14 @@ justify-content: center;
  }
 
  &__highlight-title{
-  color: var(--primary-color);
-  font-size: var(--title-h2);
-  font-weight: var(--font-weight-bold);
+  color: $primary-color;
+  font-size: $title-h2;
+  font-weight: $font-weight-bold;
  }
  &__highlight-text{
-  color: var(--second-color);
-  font-size: var(--title-h5);
-  font-weight: var(--font-weight-normal);
+  color: $second-color;
+  font-size: $title-h5;
+  font-weight: $font-weight-normal;
   max-width: 640px;
  }
  
@@ -534,7 +534,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--primary-color);
+  border: 3px solid $primary-color;
  }
  &__highlight-img img{
   width: 50px;
@@ -587,17 +587,17 @@ justify-content: center;
 
 
 &__button{
-  @include button-style(159px, 35px,var(--primary-color) , var(--font-weight-bold), var(--title-h4), var(--third-color), 25px);
+  @include button-style(159px, 35px,$primary-color ,$font-weight-bold, $title-h4, $third-color, 25px);
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 14px;
-  box-shadow: 0px 0px 3px 1px var(--box-shadow-one-color);
+  box-shadow: 0px 0px 3px 1px $box-shadow-one-color;
 
 
   & p{
-    font-size: var(--title-h4);
+    font-size: $title-h4;
   }
   & svg {
     width: 20px;
@@ -607,7 +607,7 @@ justify-content: center;
   
 }
 &__button:hover{
-  @include button-style(159px, 35px,var(--third-color) , var(--font-weight-bold), var(--title-h4), var(--primary-color), 25px);
+  @include button-style(159px, 35px, $third-color, $font-weight-bold, $title-h4, $primary-color, 25px);
   padding: 0 14px;
   display: flex;
   align-items: center;
@@ -624,7 +624,7 @@ justify-content: center;
 
 
 
-  /*Delivery*/
+/*Delivery*/
 
 
 .delivery{
@@ -643,24 +643,24 @@ justify-content: center;
     height: auto;
   }
   &__subtitle{
-    color: var(--primary-color);
-    font-weight: var(--font-weight-bold);
+    color: $primary-color;
+    font-weight: $font-weight-bold;
     text-align: center;
     margin-bottom: 10px;
   }
   &__title{
-    color: var(--second-color);
-    font-weight: var(--font-weight-bold);
+    color: $second-color;
+    font-weight: $font-weight-bold;
     padding-left: 100px;
   }
   &__highlight{
-    color: var(--primary-color);
-    font-weight: var(--font-weight-bold);
+    color: $primary-color;
+    font-weight: $font-weight-bold;
   }
   &__description{
-    color: var(--second-color);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--title-h5);
+    color: $second-color;
+    font-weight: $font-weight-normal;
+    font-size: $title-h5;
     max-width: 720px;
     margin-top: 25px;
     padding-left: 100px;
@@ -674,7 +674,7 @@ justify-content: center;
   }
 
   &__button{
-    @include button-style(159px, 50px,var(--white-color) , var(--font-weight-normal), var(--title-h3), var(--primary-color), 10px);
+    @include button-style(159px, 50px,$white-color , $font-weight-normal, $title-h3, $primary-color, 10px);
 
   }
 
@@ -714,8 +714,8 @@ justify-content: center;
     margin: 0 auto;
   }
   &__title{
-    color: var(--primary-color);
-    font-weight: var(--font-weight-bold);
+    color: $primary-color;
+    font-weight: $font-weight-bold;
     text-align: center;
     margin-bottom: 25px;
   }
@@ -771,7 +771,7 @@ justify-content: center;
     width:100px ;
     height: 100px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color:$primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -780,29 +780,29 @@ justify-content: center;
     bottom: 2px;
   }
   &__text{
-    color: var(--third-color);
-    font-size: var(--title-h2);
-    font-weight: var(--font-weight-bold);
+    color: $third-color;
+    font-size: $title-h2;
+    font-weight: $font-weight-bold;
   }
   &__heading{
-    color: var(--second-color);
-    font-weight: var(--font-weight-bold);
+    color: $second-color;
+    font-weight: $font-weight-bold;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
   }
   &__description{
-    color: var(--second-color);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--title-h5);
+    color: $second-color;
+    font-weight: $font-weight-normal;
+    font-size: $title-h5;
     max-width: 350px;
     width: 100%;
   }
   &__button{
-    @include button-style(159px, 50px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 10px);
-    font-size: var(--title-h3);
-    color: var(--third-color);
-    font-weight: var(--font-weight-normal);
+    @include button-style(159px, 50px,$white-color, $font-weight-bold, $title-h2, $primary-color, 10px);
+    font-size: $title-h3;
+    color: $third-color;
+    font-weight: $font-weight-normal;
     margin-top: 30px;
     align-self: flex-end;
     margin-right: 20px;
@@ -811,22 +811,22 @@ justify-content: center;
 }
 
 .info-card:hover{
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   
  & .info-card__button{
-  color:var(--primary-color);
-  background-color: var(--third-color);
+  color:$primary-color;
+  background-color: $third-color;
  }
  
  & .info-card__overlay{
-  background-color: var(--third-color);
+  background-color: $third-color;
   z-index: 1;
  }
  & .info-card__text{
-  color: var(--primary-color);
+  color: $primary-color;
  }
  & .info-card__description,.info-card__heading{
-  color: var(--third-color);
+  color: $third-color;
  }
  
 }
@@ -845,17 +845,17 @@ justify-content: center;
     height: auto;
   }
   &__subtitle{
-    color: var(--primary-color);
-    font-weight: var(--font-weight-bold);
+    color: $primary-color;
+    font-weight: $font-weight-bold;
     text-align: center;
     
   }
   &__title{
-    color: var(--second-color);
-    font-weight: var(--font-weight-bold);
+    color: $second-color;
+    font-weight: $font-weight-bold;
     text-align: center;
     &--highlight{
-      color: var(--primary-color);
+      color: $primary-color;
     }
   }
 
@@ -891,14 +891,14 @@ justify-content: center;
     display: block;
   }
   &__name{
-    color: var(--second-color);
-    font-weight: var(--font-weight-normal);
+    color: $second-color;
+    font-weight: $font-weight-normal;
     text-align: center;
   }
   &__text{
-    font-size: var(--title-h5);
-    color: var(--second-color);
-    font-weight: var(--font-weight-normal);
+    font-size: $title-h5;
+    color: $second-color;
+    font-weight: $font-weight-normal;
     text-align: center;
     max-width: 430px;
   }

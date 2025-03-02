@@ -4,3 +4,7 @@
     --primary-container-width: 80%;
     --second-container-width: 100%;
   }
+
+$max-width: var(--max-width);
+$primary-container-width: var(--primary-container-width);
+$second-container-width: var(--second-container-width);
