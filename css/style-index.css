@@ -10,6 +10,7 @@
 .primary-container {
   max-width: var(--max-width);
   width: var(--primary-container-width);
+  margin: 0 auto;
 }
 
 /*CSS FONTS*/
@@ -1146,6 +1147,82 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 12px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+.footer__title {
+  color: var(--second-color);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer__branches-color {
+  background-color: var(--primary-color);
+}
+.footer__branches {
+  min-height: 179px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 20px;
+}
+.footer__branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.footer__branch-title {
+  color: var(--third-color);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 5px;
+}
+.footer__branch-address {
+  color: var(--third-color);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 10px;
+}
+.footer__branch-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+.footer__branch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__branch-icon {
+  width: 20px;
+  height: 20px;
+}
+.footer__branch-text {
+  color: var(--third-color);
+  font-size: var(--paragraph-p);
+  font-weight: var(--font-weight-normal);
+}
+.footer__branch-map {
+  margin-top: 10px;
+  color: var(--link-color);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--title-h5);
+  text-align: center;
+}
+.footer__copyright-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  min-height: 80px;
+  text-align: center;
+  color: var(--third-color);
 }
 
 /*# sourceMappingURL=style-index.css.map */

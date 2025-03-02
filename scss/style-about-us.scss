@@ -1,7 +1,9 @@
-
 @use './components/containers';
 @use './base/normalize';
-@use './pages/index';
 @use './layout/header';
 @use './layout/nav';
 @use './layout/footer';
+
+
+/*Sections*/
+@use './pages/aboutUs/about';
