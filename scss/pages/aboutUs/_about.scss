@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: $third-color;
     &__container{
         background-image: url(../../../assets/images/image_about-bg\ \(1\).jpg);
         max-height: 280px;
@@ -30,10 +31,87 @@
         font-size: $title-h5;
     }
 
+    /*About__content*/
     &__card{
         border-radius: 20px;
         border: 2px solid $primary-color;
         display: flex;
+        padding: 25px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        align-items: center;
+        &-image{
+            width: 50%;
+            height: 100%;
+            max-width: 511px;
+            max-height: 294px;
+            display: flex;
+            border-radius: 20px;
+        }
+        &-image img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+        }
+        &-text{
+            padding: 0 20px;
+        }
+        &-title{
+            margin-bottom: 40px;
+            font-weight: $font-weight-bold;
+            max-width: 600px;
+            color: $second-color;
+        }
+        &-description{
+            font-weight: $font-weight-normal;
+            max-width: 600px;
+            font-size: $title-h5;
+            color: $second-color;
+            text-align: justify;
+        }
+    }
+}
 
+/*History*/
+.history{
+    margin-top: 55px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__title{
+        color: $primary-color;
+        font-weight: $font-weight-bold;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__content{
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__text{
+        color: $second-color;
+        font-weight: $font-weight-normal;
+        font-size: $title-h5;
+        padding-top: 8px;
+        max-width: 600px;
+        text-align: justify;
+    }
+    &__media{
+        width: 50%;
+        height: auto;
+        max-width: 511px;
+        max-height: 294px;
+        display: flex;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+        display: block;
     }
 }

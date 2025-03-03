@@ -96,6 +96,7 @@ button {
   --white-color: #FFFFFF;
   --box-shadow-one-color: rgba(0, 0, 0, 0.25);
   --box-shadow-second-color: rgba(0, 0, 0, 0.120);
+  --gradient-one-color: #FFDFDF;
 }
 
 /*
@@ -1062,7 +1063,7 @@ body {
 /*Styles nav*/
 .nav {
   background-color: var(--third-color);
-  height: 119px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
