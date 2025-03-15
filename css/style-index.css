@@ -7,6 +7,26 @@
   --second-container-width: 100%;
 }
 
+.twitter {
+  mask-image: url("../../assets/icons/twitter (4).svg");
+  -webkit-mask-image: url("../../assets/icons/twitter (4).svg");
+}
+
+.instagram {
+  mask-image: url("../../assets/icons/instagram (2).svg");
+  -webkit-mask-image: url("../../assets/icons/instagram (2).svg");
+}
+
+.facebook {
+  mask-image: url("../../../assets/icons/facebook (2).svg");
+  -webkit-mask-image: url("../../../assets/icons/facebook (2).svg");
+}
+
+.linkedin {
+  mask-image: url("../../../assets/icons/linkedin (4).svg");
+  -webkit-mask-image: url("../../../assets/icons/linkedin (4).svg");
+}
+
 .primary-container {
   max-width: var(--max-width);
   width: var(--primary-container-width);

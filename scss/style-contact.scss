@@ -1,0 +1,10 @@
+@use './components/containers';
+@use './base/normalize';
+@use './layout/header';
+@use './layout/nav';
+@use './layout/footer';
+
+
+/*Sections*/
+@use './pages/contact/headerMain.scss';
+@use './pages/contact/address.scss';

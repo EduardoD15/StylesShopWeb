@@ -1,0 +1,114 @@
+/*typography fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*css variables*/
+:root {
+  --max-width: 1600px;
+  --primary-container-width: 80%;
+  --second-container-width: 100%;
+}
+
+.twitter {
+  mask-image: url("../../assets/icons/twitter (4).svg");
+  -webkit-mask-image: url("../../assets/icons/twitter (4).svg");
+}
+
+.instagram {
+  mask-image: url("../../assets/icons/instagram (2).svg");
+  -webkit-mask-image: url("../../assets/icons/instagram (2).svg");
+}
+
+.facebook {
+  mask-image: url("../../../assets/icons/facebook (2).svg");
+  -webkit-mask-image: url("../../../assets/icons/facebook (2).svg");
+}
+
+.linkedin {
+  mask-image: url("../../../assets/icons/linkedin (4).svg");
+  -webkit-mask-image: url("../../../assets/icons/linkedin (4).svg");
+}
+
+/*Colors Css*/
+:root {
+  --primary-color: #CC3333;
+  --second-color: #2A435D;
+  --third-color: #FFF8EE;
+  --link-color: #4BFF3C;
+  --white-color: #FFFFFF;
+  --box-shadow-one-color: rgba(0, 0, 0, 0.25);
+  --box-shadow-second-color: rgba(0, 0, 0, 0.120);
+  --gradient-one-color: #FFDFDF;
+}
+
+/*CSS FONTS*/
+:root {
+  --primary-font: "Roboto", serif;
+  /* Typography Size */
+  --title-h1: 50px;
+  --title-h2: 35px;
+  --title-h3: 25px;
+  --title-h4: 20px;
+  --title-h5: 18px;
+  --title-h6: 16px;
+  --paragraph-p: 12px;
+  --paragraph-p2: 14px;
+  /* Typography Weight */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extraBold: 800;
+  --font-weight-black: 900;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  gap: 20px;
+  align-self: flex-start;
+}
+.contact__title {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+}
+.contact__text {
+  font-size: var(--title-h5);
+  font-weight: var(--font-weight-normal);
+  color: var(--second-color);
+}
+.contact__item {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.contact__icon {
+  background-repeat: no-repeat;
+  height: 12px;
+  height: 16px;
+  color: var(--primary-color);
+}
+.contact__social {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.contact__social-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--primary-color);
+}
+
+/*# sourceMappingURL=address.css.map */

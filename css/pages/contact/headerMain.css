@@ -1,0 +1,98 @@
+/*typography fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*css variables*/
+:root {
+  --max-width: 1600px;
+  --primary-container-width: 80%;
+  --second-container-width: 100%;
+}
+
+.twitter {
+  mask-image: url("../../assets/icons/twitter (4).svg");
+  -webkit-mask-image: url("../../assets/icons/twitter (4).svg");
+}
+
+.instagram {
+  mask-image: url("../../assets/icons/instagram (2).svg");
+  -webkit-mask-image: url("../../assets/icons/instagram (2).svg");
+}
+
+.facebook {
+  mask-image: url("../../../assets/icons/facebook (2).svg");
+  -webkit-mask-image: url("../../../assets/icons/facebook (2).svg");
+}
+
+.linkedin {
+  mask-image: url("../../../assets/icons/linkedin (4).svg");
+  -webkit-mask-image: url("../../../assets/icons/linkedin (4).svg");
+}
+
+/*Colors Css*/
+:root {
+  --primary-color: #CC3333;
+  --second-color: #2A435D;
+  --third-color: #FFF8EE;
+  --link-color: #4BFF3C;
+  --white-color: #FFFFFF;
+  --box-shadow-one-color: rgba(0, 0, 0, 0.25);
+  --box-shadow-second-color: rgba(0, 0, 0, 0.120);
+  --gradient-one-color: #FFDFDF;
+}
+
+/*CSS FONTS*/
+:root {
+  --primary-font: "Roboto", serif;
+  /* Typography Size */
+  --title-h1: 50px;
+  --title-h2: 35px;
+  --title-h3: 25px;
+  --title-h4: 20px;
+  --title-h5: 18px;
+  --title-h6: 16px;
+  --paragraph-p: 12px;
+  --paragraph-p2: 14px;
+  /* Typography Weight */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extraBold: 800;
+  --font-weight-black: 900;
+}
+
+/*
+.button-primary {
+    @include button-style(300px, 60px,var(--white-color) , var(--font-weight-bold), var(--title-h2), var(--primary-color), 20px);
+}
+    */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--third-color);
+}
+.sectionHeader__container {
+  background-image: url(../../../assets/images/image_contact_bg.jpg);
+  max-height: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionHeader__title {
+  text-align: center;
+  color: var(--third-color);
+}
+.sectionHeader__description {
+  text-align: center;
+  color: var(--third-color);
+  font-size: var(--title-h5);
+}
+
+/*# sourceMappingURL=headerMain.css.map */

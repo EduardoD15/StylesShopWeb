@@ -1,0 +1,35 @@
+@use "../../base/variables" as *;
+@use "../../base/colors" as *;
+@use "../../base/fonts" as *;
+@use "../../mixins" as *;
+
+.sectionHeader
+{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $third-color;
+    &__container{
+        background-image: url(../../../assets/images/image_contact_bg.jpg);
+        max-height: 280px;
+        height: 280px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__title{
+        text-align: center;
+        color: $third-color;
+    }
+    &__description{
+        text-align: center;
+        color: $third-color;
+        font-size: $title-h5;
+    }
+}

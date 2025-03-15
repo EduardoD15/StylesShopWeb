@@ -3,8 +3,29 @@
     --max-width: 1600px;
     --primary-container-width: 80%;
     --second-container-width: 100%;
+    
   }
 
 $max-width: var(--max-width);
 $primary-container-width: var(--primary-container-width);
 $second-container-width: var(--second-container-width);
+
+.twitter{
+  mask-image: url("../../assets/icons/twitter\ \(4\).svg");
+  -webkit-mask-image: url("../../assets/icons/twitter\ \(4\).svg");
+}
+
+.instagram{
+  mask-image: url("../../assets/icons/instagram\ \(2\).svg");
+  -webkit-mask-image: url("../../assets/icons/instagram\ \(2\).svg");
+}
+
+.facebook{
+    mask-image: url("../../../assets/icons/facebook\ \(2\).svg");
+    -webkit-mask-image: url("../../../assets/icons/facebook\ \(2\).svg");
+}
+
+.linkedin{
+    mask-image: url("../../../assets/icons/linkedin\ \(4\).svg");
+    -webkit-mask-image: url("../../../assets/icons/linkedin\ \(4\).svg");
+}
